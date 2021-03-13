@@ -188,6 +188,10 @@
         font-size: 17px;
         line-height: 22px;
     }
+    .news {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
@@ -647,12 +651,14 @@
 .product-image-alt {
     display: flex;
     flex-wrap: wrap;
-    width: calc(100% - 50px);
+    width: calc(100% - 100px);
     margin: 0 auto;
 }
 
 .product-name {
     margin-top: -25px;
+    margin-left: 25px;
+    margin-right: 25px;
     padding: 50px 23px 25px;
     border: 2px solid #b59f5b;
     position: relative;
