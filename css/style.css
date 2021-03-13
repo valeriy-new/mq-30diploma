@@ -153,6 +153,9 @@
         line-height: 18px;
         margin: 10px 0 0px;
     }
+    .product-image-alt:nth-child(n+2) {
+        margin-top: 27px;
+    }
     footer {
         margin: 0 15px;
         padding: 30px 0;
@@ -644,7 +647,76 @@
 .product-image-alt {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: calc(100% - 50px);
+    margin: 0 auto;
+}
+
+.product-name {
+    margin-top: -25px;
+    padding: 50px 23px 25px;
+    border: 2px solid #b59f5b;
+    position: relative;
+    z-index: 1;
+}
+
+.product-item {
+    font-family: OpenSans-Bold, Arial, sans-serif;
+    font-weight: bold;
+    color: #0f0d0e;
+    text-transform: uppercase;
+}
+
+.product-description,
+.product-specification-link {
+    font-family: OpenSans-Regular, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.product-description {
+    color: #0f0d0e;
+}
+
+.product-specification-link {
+    color: #b59f5b;
+    text-decoration: none;
+}
+
+.buy-now {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 20px 0 0;
+}
+
+.basic-price {
+    display: block;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: #0f0d0e;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.discount-price {
+    display: block;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: #0f0d0e;
+    font-size: 20px;
+}
+
+.shopping {
+    width: 140px;
+    height: 48px;
+    font-family: OpenSans-Bold, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-style: none;
+    background-color: #b59f5b;
 }
 
 .socials {
